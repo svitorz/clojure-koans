@@ -21,10 +21,10 @@
  (= true (== 2.0 2))
 
  "Something is not equal to nothing"
- (=  (not (= 1 nil)))
+ (= true (not (= 1 nil)))
 
  "Strings, and keywords, and symbols: oh my!"
- (= (= "hello" :hello 'hello))
+ (= false (= "hello" :hello 'hello))
 
  "Make a keyword with your keyboard"
  (= :hello (keyword "hello"))
@@ -33,7 +33,7 @@
  (= 'hello (symbol "hello"))
 
  "What could be equivalent to nothing?"
- (=  nil)
+ (= nil)
 
  "When things cannot be equal, they must be different"
  (not= :fill-in-the-blank "Testing"))
